@@ -1,0 +1,190 @@
+---
+title           : "DDD meta-analysis preregistration form"
+shorttitle      : "DDD meta-analysis prereg"
+date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
+
+author: 
+  - name        : Nathalie Jreidini
+    affiliation : 1
+
+affiliation:
+  - id          : 1
+    institution : McGill University
+
+output: prereg::prereg_pdf
+---
+
+# Study Information
+
+## Density-dependent animal dispersal meta-analysis
+
+```{=html}
+<!-- Provide the working title of your study. It may be the same title that you submit for publication of your final manuscript, but it is not a requirement. The title should be a specific and informative description of a project. Vague titles such as 'Fruit fly preregistration plan' are not appropriate.
+
+Example: Effect of sugar on brownie tastiness. -->
+```
+`r rmarkdown::metadata$title`
+
+## Description
+
+```{=html}
+<!-- Please give a brief description of your study, including some background, the purpose of the of the study, or broad research questions. The description should be no longer than the length of an abstract. It can give some context for the proposed study, but great detail is not needed here for your preregistration.
+
+Example: Though there is strong evidence to suggest that sugar affects taste preferences, the effect has never been demonstrated in brownies. Therefore, we will measure taste preference for four different levels of sugar concentration in a standard brownie recipe to determine if the effect exists in this pastry. -->
+```
+The aim of this study is to review empirical studies of animal dispersal in relation to conspecific density to examine the evidence for density-dependent dispersal among taxa and test whether reports of its occurrence are taxon-specific and/or biased by the methodology employed.
+
+## Hypotheses
+
+```{=html}
+<!-- List specific, concise, and testable hypotheses. Please state if the hypotheses are directional or non-directional. If directional, state the direction. A predicted effect is also appropriate here. If a specific interaction or moderation is important to your research, you can list that as a separate hypothesis.
+
+Example: If taste affects preference, then mean preference indices will be higher with higher concentrations of sugar. -->
+```
+If effect size is significantly correlated with one or more methodology categorical variables, then density-dependent dispersal could be considered to be substantially method-dependent.
+
+# Design Plan
+
+<!-- In this section, you will be asked to describe the overall design of your study. Remember that this research plan is designed to register a single study, so if you have multiple experimental designs, please complete a separate preregistration. -->
+
+## Study type
+
+**Meta-Analysis**. A systematic review of published studies.
+
+## Blinding
+
+<!-- Blinding describes who is aware of the experimental manipulations within a study. Select all that apply. Is there any additional blinding in this study? -->
+
+No blinding is involved in this study.
+
+## Study design
+
+```{=html}
+<!-- Describe your study design. Examples include two-group, factorial, randomized block, and repeated measures. Is it a between (unpaired), within-subject (paired), or mixed design? Describe any counterbalancing required. Typical study designs for observation studies include cohort, cross sectional, and case-control studies.
+
+This question has a variety of possible answers. The key is for a researcher to be as detailed as is necessary given the specifics of their design. Be careful to determine if every parameter has been specified in the description of the study design. There may be some overlap between this question and the following questions. That is OK, as long as sufficient detail is given in one of the areas to provide all of the requested information. For example, if the study design describes a complete factorial, 2 X 3 design and the treatments and levels are specified previously, you do not have to repeat that information.
+
+Example: We have a between subjects design with 1 factor (sugar by mass) with 4 levels. -->
+```
+To gather studies for use in the meta-analysis, we conducted a thorough review of the literature using the Google Scholar database with the keywords "density" and "dispersal" or "emigration" in articles published from January 1st, 2000, through February 28th, 2021, excluding citations. We only retained studies that referred to conspecific density rather than heterospecific or interspecific density, measured animal density at the starting point of dispersal rather than at the end point of dispersal, reported a statistical effect specifically of density on dispersal, and reported results from empirical observations and not from simulations or theoretical models. Studies that had prominent confounding variables (such as an effect of body size or patch quality) were also excluded from the meta-analysis. This search yielded 81 studies in 59 articles that fit our criteria of inclusion.
+
+## Randomization
+
+```{=html}
+<!-- If you are doing a randomized study, how will you randomize, and at what level? Typical randomization techniques include: simple, block, stratified, and adaptive covariate randomization. If randomization is required for the study, the method should be specified here, not simply the source of random numbers.
+
+Example: We will use block randomization, where each participant will be randomly assigned to one of the four equally sized, predetermined blocks. The random number list used to create these four blocks will be created using the web applications available at https://random.org. -->
+```
+Enter your response here.
+
+# Sampling Plan
+
+<!-- In this section we’ll ask you to describe how you plan to collect samples, as well as the number of samples you plan to collect and your rationale for this decision. Please keep in mind that the data described in this section should be the actual data used for analysis, so if you are using a subset of a larger dataset, please describe the subset that will actually be used in your study. -->
+
+## Existing data
+
+<!-- Preregistration is designed to make clear the distinction between confirmatory tests, specified prior to seeing the data, and exploratory analyses conducted after observing the data. Therefore, creating a research plan in which existing data will be used presents unique challenges. Please select the description that best describes your situation. Please do not hesitate to contact us if you have questions about how to answer this question (prereg@cos.io). -->
+
+**Registration prior to analysis of the data**. As of the date of submission, the data exist and you have accessed it, though no analysis has been conducted related to the research plan (including calculation of summary statistics). A common situation for this scenario when a large dataset exists that is used for many different studies over time, or when a data set is randomly split into a sample for exploratory analyses, and the other section of data is reserved for later confirmatory data analysis.
+
+## Data collection procedures
+
+```{=html}
+<!-- Please describe the process by which you will collect your data. If you are using human subjects, this should include the population from which you obtain subjects, recruitment efforts, payment for participation, how subjects will be selected for eligibility from the initial pool (e.g. inclusion and exclusion rules), and your study timeline. For studies that donÍt include human subjects, include information about how you will collect samples, duration of data gathering efforts, source or location of samples, or batch numbers you will use.
+
+The answer to this question requires a specific set of instructions so that another person could repeat the data collection procedures and recreate the study population. Alternatively, if the study population would be unable to be reproduced because it relies on a specific set of circumstances unlikely to be recreated (e.g., a community of people from a specific time and location), the criteria and methods for creating the group and the rationale for this unique set of subjects should be clear.
+
+Example: Participants will be recruited through advertisements at local pastry shops. Participants will be paid $10 for agreeing to participate (raised to $30 if our sample size is not reached within 15 days of beginning recruitment). Participants must be at least 18 years old and be able to eat the ingredients of the pastries. -->
+```
+To derive comparable effect sizes, we extracted the correlation coefficient, Pearson's r, from all studies of density in relation to dispersal where it was available. Where not available, we calculated r if there was sufficient information provided (Cook et al. 1992).
+
+## Sample size
+
+```{=html}
+<!-- Describe the sample size of your study. How many units will be analyzed in the study? This could be the number of people, birds, classrooms, plots, interactions, or countries included. If the units are not individuals, then describe the size requirements for each unit. If you are using a clustered or multilevel design, how many units are you collecting at each level of the analysis? For some studies, this will simply be the number of samples or the number of clusters. For others, this could be an expected range, minimum, or maximum number.
+
+Example: Our target sample size is 280 participants. We will attempt to recruit up to 320, assuming that not all will complete the total task. -->
+```
+k = 81 studies from n = 52 articles.
+
+## Sample size rationale
+
+```{=html}
+<!-- This could include a power analysis or an arbitrary constraint such as time, money, or personnel. This gives you an opportunity to specifically state how the sample size will be determined. A wide range of possible answers is acceptable; remember that transparency is more important than principled justifications. If you state any reason for a sample size upfront, it is better than stating no reason and leaving the reader to "fill in the blanks." Acceptable rationales include: a power analysis, an arbitrary number of subjects, or a number based on time or monetary constraints.
+
+Example: We used the software program G*Power to conduct a power analysis. Our goal was to obtain .95 power to detect a medium effect size of .25 at the standard .05 alpha error probability. -->
+```
+This sample size corresponds to all literature found to comply to our criteria of inclusion for this study.
+
+# Variables
+
+<!-- In this section you can describe all variables (both manipulated and measured variables) that will later be used in your confirmatory analysis plan. In your analysis plan, you will have the opportunity to describe how each variable will be used. If you have variables which you are measuring for exploratory analyses, you are not required to list them, though you are permitted to do so. -->
+
+```{=html}
+<!-- Describe each variable that you will measure. This will include outcome measures, as well as any predictors or covariates that you will measure. You do not need to include any variables that you plan on collecting if they are not going to be included in the confirmatory analyses of this study.
+
+Observational studies and meta-analyses will include only measured variables. As with the previous questions, the answers here must be precise. For example, 'intelligence,' 'accuracy,' 'aggression,' and 'color' are too vague. Acceptable alternatives could be 'IQ as measured by Wechsler Adult Intelligence Scale' 'percent correct,' 'number of threat displays,' and 'percent reflectance at 400 nm.'
+
+Example: The single outcome variable will be the perceived tastiness of the single brownie each participant will eat. We will measure this by asking participants ‘How much did you enjoy eating the brownie’ (on a scale of 1-7, 1 being 'not at all', 7 being 'a great deal') and 'How good did the brownie taste' (on a scale of 1-7, 1 being 'very bad', 7 being 'very good'). -->
+```
+We defined four categorical variables descriptive of the individual animals involved in the study -- Taxonomic Group, Sex, Age, and Migratory Behavior -- and five categorical variables descriptive of the study methodology -- Study Design, Density Metric, Dispersal Metric, Spatial Scale, and Temporal Scale. We recognized five categories of Taxonomic Group: Birds (k = 22), Fishes (k = 8), Herpetofauna (k = 7, consisting of both amphibians and reptiles), Invertebrates (k = 22, consisting of insects and arachnids), and Mammals (k = 22). The variable, Sex, consisted of three categories: males (k = 17), females (k = 17), and males + females (k = 47, studies that did not distinguish between sexes). Age consisted of two categories: adults (k = 51) and juveniles (k = 30) for studies that did distinguish between age groups. Migratory Behavior described whether the animals were 'migratory' (k = 31), i.e., if they performed long-distance migratory movements as part of their life history, such as for breeding, mating, or hibernation, or were 'non-migratory' (k = 50) if they did not perform these movements. Among the methodology variables, Study Design had two categories: 'manipulated' (k = 32), including all experimental studies that employed artificial enclosures, microcosms, mesocosms, or laboratory set-ups, and 'natural' (k = 49) consisting of studies of wild populations in nature. The variable Density Metric had three categories of studies based on assessment location: 'natal' (k = 27) for studies measuring density at a birth or developmental site, 'breeding' (k = 17) for studies measuring density at a breeding site, and 'population' (k = 37) for studies that assessed abundance of individuals in the whole population. Dispersal Metric also had three categories based on dispersal assessment method: 'propensity' (k = 36) for studies assessing the probability or frequency of emigration, 'rate' (k = 15) for studies measuring movement distance per unit time, or 'distance' (k = 30) for studies recording either average or net distance moved by an animal between two points. We divided studies into two categories of Spatial Scale: 'between patches' (k = 43) whereby the start and end point at each patch was recorded, and 'out of a patch' (k = 38) whereby the starting point of the displacement was recorded but the destination (or settlement point) was not recorded in the study. Finally, Temporal Scale of dispersal observations recorded on a scale of a year or less was categorized as 'intra-annual' (k = 41), those recorded between years as 'inter-annual' (k = 31), and those recorded over the course of short-term experimental studies as 'per trial' (k = 9).
+
+# Analysis Plan
+
+```{=html}
+<!-- You may describe one or more confirmatory analysis in this preregistration. Please remember that all analyses specified below must be reported in the final article, and any additional analyses must be noted as exploratory or hypothesis generating.
+
+A confirmatory analysis plan must state up front which variables are predictors (independent) and which are the outcomes (dependent), otherwise it is an exploratory analysis. You are allowed to describe any exploratory work here, but a clear confirmatory analysis is required. -->
+```
+## Statistical models
+
+```{=html}
+<!-- What statistical model will you use to test each hypothesis? Please include the type of model (e.g. ANOVA, multiple regression, SEM, etc) and the specification of the model (this includes each variable that will be included as predictors, outcomes, or covariates). Please specify any interactions, subgroup analyses, pairwise or complex contrasts, or follow-up tests from omnibus tests. If you plan on using any positive controls, negative controls, or manipulation checks you may mention that here. Remember that any test not included here must be noted as an exploratory test in your final article.
+
+This is perhaps the most important and most complicated question within the preregistration. As with all of the other questions, the key is to provide a specific recipe for analyzing the collected data. Ask yourself: is enough detail provided to run the same analysis again with the information provided by the user? Be aware for instances where the statistical models appear specific, but actually leave openings for the precise test. See the following examples:
+
+- If someone specifies a 2x3 ANOVA with both factors within subjects, there is still flexibility with the various types of ANOVAs that could be run. Either a repeated measures ANOVA (RMANOVA) or a multivariate ANOVA (MANOVA) could be used for that design, which are two different tests. 
+- If you are going to perform a sequential analysis and check after 50, 100, and 150 samples, you must also specify the p-values you’ll test against at those three points.
+
+Example:  We will use a one-way between subjects ANOVA to analyze our results. The manipulated, categorical independent variable is 'sugar' whereas the dependent variable is our taste index. -->
+```
+To examine the impact of each methodology categorical variable on Zr, we will use a multilevel mixed-effects model with all variables added as fixed effects and Taxonomic Group added as a random effect.
+
+## Transformations
+
+```{=html}
+<!-- If you plan on transforming, centering, recoding the data, or will require a coding scheme for categorical variables, please describe that process. If any categorical predictors are included in a regression, indicate how those variables will be coded (e.g. dummy coding, summation coding, etc.) and what the reference category will be.
+
+Example: The "Effect of sugar on brownie tastiness" does not require any additional transformations. However, if it were using a regression analysis and each level of sweet had been categorically described (e.g. not sweet, somewhat sweet, sweet, and very sweet), 'sweet' could be dummy coded with 'not sweet' as the reference category. -->
+```
+We will apply Fisher's Z-transform to linearize r values (Corey et al. 1998), then weight each value by the reciprocal of its sampling variance (Borenstein et al. 2021). The resulting weighted effect sizes Zr will be used in subsequent analyses, where a positive value indicates conspecific repulsion (i.e., higher dispersal with increasing density) and a negative value indicates conspecific attraction (i.e., lower dispersal with increasing density).
+
+## Data exclusion
+
+```{=html}
+<!-- How will you determine what data or samples, if any, to exclude from your analyses? How will outliers be handled? Will you use any awareness check? Any rule for excluding a particular set of data is acceptable. One may describe rules for excluding a participant or for identifying outlier data.
+
+Example: No checks will be performed to determine eligibility for inclusion besides verification that each subject answered each of the three tastiness indices. Outliers will be included in the analysis. -->
+```
+We will test for publication bias among studies using a funnel plot of weighted effect sizes versus standard error and an Egger's test for funnel plot asymmetry (Egger et al. 1997) for all studies individually and within categories. We will also apply a trim-and-fill analysis to identify and correct for funnel plot asymmetry (Sterne and Egger 2001).
+
+## Missing data
+
+```{=html}
+<!-- How will you deal with incomplete or missing data? Any relevant explanation is acceptable. As a final reminder, remember that the final analysis must follow the specified plan, and deviations must be either strongly justified or included as a separate, exploratory analysis.
+
+Example: If a subject does not complete any of the three indices of tastiness, that subject will not be included in the analysis. -->
+```
+There is no missing data in this dataset.
+
+# References
+
+Borenstein, M., Hedges, L. V., Higgins, J. P., & Rothstein, H. R. (2021). Introduction to meta-analysis. John Wiley & Sons. Cook, T. D., Cooper, H., Cordray, D. S., Hartmann, H., Hedges, L. V., & Light, R. J. (Eds.). (1992). Meta-analysis for explanation: A casebook. Russell Sage Foundation. Corey, D. M., Dunlap, W. P., & Burke, M. J. (1998). Averaging correlations: Expected values and bias in combined Pearson rs and Fisher's z transformations. The Journal of general psychology, 125(3), 245-261. Egger, M., Smith, G. D., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. British Medical Journal, 315(7109), 629-634. Sterne, J. A., & Egger, M. (2001). Funnel plots for detecting bias in meta-analysis: guidelines on choice of axis. Journal of clinical epidemiology, 54(10), 1046-1055. \##
+
+```{=tex}
+\vspace{-2pc}
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{-1in}
+\setlength{\parskip}{8pt}
+```
+\noindent
