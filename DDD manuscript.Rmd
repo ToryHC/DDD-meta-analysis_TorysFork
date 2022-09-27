@@ -9,22 +9,36 @@ output: word_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Abstract
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+1.  Animal dispersive movements play a key role in maintaining
+    population dynamics, and density has been suggested to impact these movements
+    either by driving or inhibiting them. Although the relationship between
+    conspecific density and dispersal has been explored in various study systems,
+    inconsistent results limit the formation of reliable general trends in terms of
+    both the magnitude and the direction of density dependence.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+2.  Here, we review empirical studies of animal dispersal in
+    relation to conspecific density to examine the evidence for density-dependent
+    dispersal among taxa and test whether reports of its occurrence are taxon-specific
+    and/or biased by the methodology employed.
 
-```{r cars}
-summary(cars)
-```
+3.  We conducted a thorough review of the literature (2000 --
+    2021) and found *k* = 81 empirical
+    studies of amphibians, birds, fishes, invertebrates, mammals, or reptiles that had
+    tested for a correlation between conspecific density and animal dispersal. We extracted
+    categorical variables for taxonomic group, sex, age, migratory behavior, study
+    design, density and dispersal metrics, as well as temporal and spatial scale, to
+    test each of their correlation with the effect of density on dispersal (Pearson's
+    *r*) using linear regressions and multilevel mixed-effect modelling. We
+    tested for publication bias using funnel plots and trim-and-fill analysis to
+    deduce asymmetry and examined heterogeneity among studies both across and
+    within categories to ascertain the reliability of the results.
 
-## Including Plots
+## Introduction
 
-You can also embed plots, for example:
+## Methods
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+## Results
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Discussion
